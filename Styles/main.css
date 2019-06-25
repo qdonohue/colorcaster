@@ -1,0 +1,65 @@
+#master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upperBar {
+    flex: 0 1 10vh;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding: 1px;
+}
+
+.mainPortion {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideBar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.sideTitle {
+    font-size: 4vh;
+    font-weight: 200;
+    border-bottom: 1px dotted black;
+}
+
+
+#mainGraph {
+    flex: 0 0 auto;
+    width: 800px;
+    height: 600px;
+    outline: black solid 2px;
+}
+
+
+.header {
+    font-size: 9vh;
+    font-style: italic;
+}
+
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
