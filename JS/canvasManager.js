@@ -31,8 +31,8 @@ function updateHighScore() {
 function revealContourLines() {
     clearGraph();
 
-    for (var x = 0; x < canvas.width; x += 10) {
-        for (var y = 0; y < canvas.height; y+= 10) {
+    for (var x = 0; x < canvas.width; x += 20) {
+        for (var y = 0; y < canvas.height; y+= 20) {
             ctx.beginPath();
             ctx.arc(x, y, POINT_RADIUS, 0, 2*Math.PI);
             ctx.fillStyle = getColorFromScore(getScore(x, y, mathFunctionString));
