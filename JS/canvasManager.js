@@ -1,5 +1,5 @@
 
-const POINT_RADIUS = 5;
+const POINT_RADIUS = 10;
 // updates the canvas, drawing points of the appropriate color
 function updateCanvas() {
     clearGraph();
@@ -20,4 +20,24 @@ function updatePoints() {
 
 function clearGraph() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function updateHighScore() {
+    var score = $('#bestScore')
+    score.html(highScore);
+}
+
+// function that will reveal all the contour lines across the board
+function revealContourLines() {
+    clearGraph();
+
+    for (var x = 0; x < canvas.width; x += 10) {
+        for (var y = 0; y < canvas.height; y+= 10) {
+            ctx.beginPath();
+            ctx.arc(x, y, POINT_RADIUS, 0, 2*Math.PI);
+            ctx.fillStyle = getColorFromScore(getScore(x, y, mathFunctionString));
+            ctx.fill();
+        }
+    }
+
 }

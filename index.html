@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset=utf-8>
-		<title>Visual Descent</title>
+		<title>Color Caster</title>
 		<style>
 			body { margin: 0; }
 			canvas { width: 100%; height: 100% }
@@ -15,16 +15,22 @@
             <div class="upperBar">
                 <div class="header">Color Caster</div>
                 <div class="controls">
+                    <button id="contour" type="button">Reveal Contours</button>
                     <button id="reset" type="button">Restart Game</button>
                 </div>
             </div>
             <hr>
             <div class="mainPortion">
                 <div class="sideBar">
+                    <div class="sideTitle">Best Guess</div>
+                    <br>
+                    <div class="highScore" id="bestScore"></div>
                 </div>
                 <canvas id="mainGraph">
                 </canvas>
                 <div class="sideBar">
+                    <div class="sideTitle">Prior Guesses</div>
+                    <div id="priorGuesses"></div>
                 </div>
             </div>
         </div>
