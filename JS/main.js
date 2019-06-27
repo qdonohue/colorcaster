@@ -1,6 +1,6 @@
 
 var clickedPoints;
-var mathFunctionString;
+var mathFunctionString = "BRANIN";
 var highScore;
 
 var canvas = document.getElementById('mainGraph');
@@ -8,7 +8,7 @@ var ctx = canvas.getContext('2d');
 
 function init() {
     clickedPoints = [];
-    mathFunctionString = "TEST_RIGHT_NOW";
+    mathFunctionString = "BRANIN";
     highScore = 0;
 
     

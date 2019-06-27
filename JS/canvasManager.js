@@ -35,7 +35,12 @@ function revealContourLines() {
         for (var y = 0; y < canvas.height; y+= 20) {
             ctx.beginPath();
             ctx.arc(x, y, POINT_RADIUS, 0, 2*Math.PI);
-            ctx.fillStyle = getColorFromScore(getScore(x, y, mathFunctionString));
+            var score = getScore(x, y, mathFunctionString);
+            ctx.fillStyle = getColorFromScore(score);
+            if (score > highScore) {
+                highScore = score;
+                updateHighScore();
+            }
             ctx.fill();
         }
     }
