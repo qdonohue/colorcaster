@@ -1,5 +1,5 @@
 
-function getScore(functionString) {
+function getScore(x, y, functionString) {
 
-    return Math.floor(Math.random() * 100)
+    return Math.floor(Math.random() * 100);
 }

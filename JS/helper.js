@@ -1,24 +1,4 @@
 
-function getHTMLelement(point) {
-    div = document.createElement("div");
-    div.className = "priorGuess";
-
-    div.style.backgroundcolor = point.color;
-
-    location = document.createElement('div');
-    location.className = "location";
-    location.html = "(" + point.x + ", " + point.y + ")";
-
-    div.appendChild(location);
-
-    score = document.createElement('div');
-    score.className = "score";
-    score.html = point.score;
-
-    return div;
-}
-
-
 function hsl_col_perc(percent, start, end) {
     var a = percent / 100,
         b = (end - start) * a,

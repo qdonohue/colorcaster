@@ -33,12 +33,14 @@ function init() {
 
         clickedPoints.push(point);
         updateCanvas();
+        updatePriorGuesses();
     });
 
     $('#reset').click(function() {
         clickedPoints = [];
         highScore = 0;
         clearGraph();
+        updatePriorGuesses();
     })
 
     $('#contour').click(async function() {

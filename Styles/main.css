@@ -34,6 +34,8 @@
     background-color: aliceblue;
     border: 1px solid black;
     padding: 5px;
+    max-height: 600px;
+    overflow: auto;
 }
 
 .sideTitle {
@@ -66,4 +68,20 @@
 
 .highScore {
     font-size: 10vh;
+}
+
+.guessList {
+    list-style-type: none;
+    padding: 0;
+    margin: 2px;
+}
+
+.priorGuess {
+    padding: 2px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
 }
