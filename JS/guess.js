@@ -2,7 +2,6 @@
 function getScore(x, y, functionString) {
 
     if (functionString === "BRANIN") {
-        console.log("made it into function");
         var a, b, c, r, s, t;
         a = 1;
         b = 5.1 / (4 * Math.PI * Math.PI);
