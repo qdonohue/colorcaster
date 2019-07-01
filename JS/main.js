@@ -40,6 +40,7 @@ function init() {
         clickedPoints = [];
         highScore = 0;
         clearGraph();
+        updateHighScore();
         updatePriorGuesses();
     })
 
