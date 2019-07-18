@@ -35,7 +35,6 @@
     border: 1px solid black;
     padding: 5px;
     max-height: 600px;
-    overflow: auto;
 }
 
 .sideTitle {
@@ -44,9 +43,16 @@
     border-bottom: 1px dotted black;
 }
 
+.mainStuff {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
 
 #mainGraph {
-    flex: 0 0 auto;
     width: 800px;
     height: 600px;
     outline: black solid 2px;
@@ -74,12 +80,14 @@
     list-style-type: none;
     padding: 0;
     margin: 2px;
+    overflow: auto;
 }
 
 .priorGuess {
     padding: 2px;
-    margin: 4px;
+    margin: 1px;
     display: flex;
+    border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;

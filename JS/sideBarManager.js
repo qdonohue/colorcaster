@@ -18,7 +18,7 @@ function updatePriorGuesses() {
 function getHTMLelementText(point, id) {
     idString = "li" + id;
 
-    stringFormatted = "<li class='priorGuess' id='" +idString + "'><div class='location'>(" + Math.round(point.x) + ", " + Math.round(point.y) + ")" + "</div><div class='score'>" + point.score + "</div></li>"
+    stringFormatted = "<li class='priorGuess' id='" +idString + "'><div class='location'>(" + Math.round(point.x) + ", " + Math.round(point.y) + ")" + "</div><div class='score'>   " + point.score + "</div></li>"
 
     return stringFormatted
 }
