@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+#gameOver {
+    display: none;
+    width: 800px;
+    height: 600px;
+    outline: black solid 2px;
+    font-size: 10vh;
+}
+
 .upperBar {
     flex: 0 1 10vh;
     width: 100%;

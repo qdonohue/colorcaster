@@ -1,6 +1,7 @@
 
 var clickedPoints;
 var mathFunctionString = "BRANIN";
+var GUESS_NUMBER = 10;
 var highScore;
 
 var canvas = document.getElementById('mainGraph');
@@ -14,6 +15,8 @@ function init() {
     
     canvas.setAttribute('width', '800');
     canvas.setAttribute('height', '600');
+
+    $('remainingGuess').html(GUESS_NUMBER) // set initial guess coun
 
     canvas.addEventListener('click', function(event) { // When you click on a point, add point there
         var rect = canvas.getBoundingClientRect();
@@ -32,6 +35,11 @@ function init() {
         }
 
         clickedPoints.push(point);
+        if (clickedPoints.length == GUESS_NUMBER) {
+            gameOverHandler();
+            return
+        }
+        $('#remainingGuess').html(GUESS_NUMBER - clickedPoints.length)
         updateCanvas();
         updatePriorGuesses();
     });

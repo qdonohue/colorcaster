@@ -26,10 +26,11 @@
                     <br>
                     <div class="highScore" id="bestScore"></div>
                 </div>
+                <div id="gameOver"></div>
                 <canvas id="mainGraph">
                 </canvas>
                 <div class="sideBar">
-                    <div class="sideTitle">Prior Guesses</div>
+                    <div class="sideTitle">Remaining Guesses: <span id='remainingGuess'></span></div>
                     <ul id="priorGuesses" class="guessList"></ul>
                 </div>
             </div>
@@ -40,5 +41,6 @@
         <script src="JS/main.js"></script>
         <script src="JS/guess.js"></script>
         <script src="JS/sideBarManager.js"></script>
+        <script src="JS/manager.js"></script>
 	</body>
 </html>
